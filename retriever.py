@@ -4,8 +4,8 @@ from sentence_transformers import SentenceTransformer
 import numpy as np
 
 class RAGRetriever:
-    def __init__(self, index_path='C:/Users/Ganeshan/Desktop/Qdrant/Mine/embeddings.faiss', 
-                 mapping_path='C:/Users/Ganeshan/Desktop/Qdrant/Mine/chunk_mapping.json',
+    def __init__(self, index_path='embeddings.faiss', 
+                 mapping_path='chunk_mapping.json',
                  model_name='all-MiniLM-L6-v2'):
         """Initialize the retriever with pre-built index and mapping."""
         # Load FAISS index
